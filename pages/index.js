@@ -26,7 +26,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Тавтай морил
+         Одоо л эхлэ!!!
         </h1>
 
         <div className={styles.grid}>
