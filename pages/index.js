@@ -11,7 +11,7 @@ export default function Home() {
     controls: true,
     sources: [
       {
-        src: "https://www.youtube.com/watch?v=OBQmCuA1tdU",
+        src: "https://www.youtube.com/watch?v=HYMDfMMD3fw&list=RDHYMDfMMD3fw&start_radio=1",
         type: "video/youtube",
       },
     ],
