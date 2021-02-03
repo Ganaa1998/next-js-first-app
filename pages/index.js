@@ -1,51 +1,40 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import questions from "../data/question.json";
-import Router from "next/router";
+import Hello from "../components/Hello";
+import React, { Component } from "react";
 
-export default function Home() {
-	const HandleClick = (e) => {
-		Router.reload(window.location.pathname);
+class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			message: Hello(),
+		};
+	}
+
+	updateContent = () => {
+		this.setState({ message: Hello() });
 	};
 
-	const AddToCart = () => (
-		<div>
-			<button onClick={HandleClick} className={styles.card}>
-				<p>Өөр</p>
-			</button>
-		</div>
-	);
-
-	const ChangedQuestion = () => {
-		const random = Math.floor(Math.random() * questions.questions.length);
-		const retQuestionTitle = questions.questions[random].title;
-		const retQuestionContent = questions.questions[random].content;
-		console.log(retQuestionTitle, retQuestionContent);
+	render() {
 		return (
 			<div>
-				<h2 className={styles.text__center}>{retQuestionTitle}</h2>
-				<p className={styles.text__center}>{retQuestionContent}</p>
+				<div className={styles.container}>
+					<Head>
+						<title>Эзэний үг</title>
+						<link rel="icon" href="/favicon.ico" />
+					</Head>
+					<main className={styles.main}>
+						<div className={styles.grid}>{this.state.message}</div>
+						<div>
+							<button className={styles.card} onClick={this.updateContent}>
+								Өөр
+							</button>
+						</div>
+					</main>
+					<footer className={styles.footer}></footer>
+				</div>
 			</div>
 		);
-	};
-
-	return (
-		<div className={styles.container}>
-			<Head>
-				<title>Эзэний үг</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
-			<main className={styles.main}>
-				<div className={styles.grid}>
-					<div>
-						<ChangedQuestion></ChangedQuestion>
-					</div>
-				</div>
-				<AddToCart></AddToCart>
-			</main>
-
-			<footer className={styles.footer}></footer>
-		</div>
-	);
+	}
 }
+export default App;
