@@ -25,13 +25,14 @@ class App extends Component {
 					</Head>
 					<main className={styles.main}>
 						<div className={styles.grid}>{this.state.message}</div>
+					</main>
+					<footer className={styles.footer}>
 						<div>
 							<button className={styles.card} onClick={this.updateContent}>
 								Өөр
 							</button>
 						</div>
-					</main>
-					<footer className={styles.footer}></footer>
+					</footer>
 				</div>
 			</div>
 		);
