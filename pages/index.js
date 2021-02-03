@@ -11,7 +11,7 @@ export default function Home() {
 	const AddToCart = () => (
 		<div>
 			<button onClick={HandleClick} className={styles.card}>
-				<p>Refresh</p>
+				<p>Өөр</p>
 			</button>
 		</div>
 	);
@@ -23,7 +23,7 @@ export default function Home() {
 		console.log(retQuestionTitle, retQuestionContent);
 		return (
 			<div>
-				<div className={styles.text__center}>{retQuestionTitle}</div>
+				<h2 className={styles.text__center}>{retQuestionTitle}</h2>
 				<p className={styles.text__center}>{retQuestionContent}</p>
 			</div>
 		);
@@ -32,7 +32,7 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Question</title>
+				<title>Эзэний үг</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
