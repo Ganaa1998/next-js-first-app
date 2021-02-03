@@ -1,0 +1,21 @@
+{
+    "title": "FrontAid CMS with Next.js",
+    "index": {
+      "title": "Index Page",
+      "content": "<p>Some <strong>index</strong> content...</p>"
+    },
+    "questions": [
+      {
+        "title": "Foo Page",
+        "content": "Foo content Some other content..."
+      },
+      {
+        "title": "Bar Page",
+        "content": "Bar content..."
+      },
+      {
+        "title": "Baz Page",
+        "content": "Baz content..."
+      }
+    ]
+  }
