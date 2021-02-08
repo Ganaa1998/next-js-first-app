@@ -1,5 +1,5 @@
-import questions from "../data/question.json";
-import styles from "../styles/Home.module.css";
+import questions from "../../data/emotion/happy/happy.json";
+import styles from "../../styles/Home.module.css";
 
 export default function Hello() {
 	const random = Math.floor(Math.random() * questions.questions.length);
