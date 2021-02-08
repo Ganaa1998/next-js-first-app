@@ -15,6 +15,16 @@ class App extends Component {
 					<Head>
 						<title>Эзэний үг</title>
 						<link rel="icon" href="/favicon.ico" />
+						<meta
+							property="og:image"
+							content="../public/God-Quotes.jpg"
+							key="ogimage"
+						/>
+						<meta property="og:title" content="Эзэний үг" />
+						<meta
+							property="og:description"
+							content="Таны сэтгэл хөдлөл хүнд хэцүү үед, баяр баясаглантай үед ЭЗЭН бурхан юу гэж зөвлөсөн бэ?"
+						/>
 					</Head>
 					<main className={styles.main}>
 						<p class="m-6 text-center md:text-center ...">
