@@ -17,7 +17,7 @@ class App extends Component {
 						<link rel="icon" href="/favicon.ico" />
 						<meta
 							property="og:image"
-							content="../public/God-Quotes.jpg"
+							content="https://www.awakenthegreatnesswithin.com/wp-content/uploads/2018/10/God-Quotes-1.jpg"
 							key="ogimage"
 						/>
 						<meta property="og:title" content="Эзэний үг" />
